@@ -18,8 +18,7 @@ Order findings by severity. Keep summaries secondary to findings. If no actionab
 
 ## Model and agent use
 
-- Luna may perform exact searches, inventories, and bounded extraction, then return evidence.
-- Terra may scan relationships across call sites, tests, configuration, logs, and historical patterns.
+- Luna may perform exact searches, inventories, bounded extraction, and scan relationships across call sites, tests, configuration, logs, and historical patterns, then return evidence.
 - Sol performs ordinary formal review and integrates module-level conclusions.
 - Astra handles high-risk, security-critical, architecture-level, or conflicting review judgments.
 - The main agent verifies decisive evidence and owns the final review result.
