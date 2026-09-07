@@ -1,0 +1,14 @@
+interface:
+  display_name: Coding Agent Orchestrator
+  short_description: Route coding work by risk, context, and cost
+  default_prompt: Use $coding-agent-orchestrator to plan and execute this coding task
+    efficiently.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
