@@ -18,7 +18,8 @@ Order findings by severity. Keep summaries secondary to findings. If no actionab
 
 ## Model and agent use
 
-- Luna may scan call sites, tests, configuration, and historical patterns, then return evidence.
+- Luna may perform exact searches, inventories, and bounded extraction, then return evidence.
+- Terra may scan relationships across call sites, tests, configuration, logs, and historical patterns.
 - Sol performs ordinary formal review and integrates module-level conclusions.
 - Astra handles high-risk, security-critical, architecture-level, or conflicting review judgments.
 - The main agent verifies decisive evidence and owns the final review result.
@@ -30,4 +31,3 @@ Use independent subagents only when review surfaces are separable, such as imple
 Escalate review depth for authentication, authorization, payments, refunds, concurrency, locks, transactions, migrations, database writes, data consistency, destructive operations, and deployment-critical behavior. Check failure paths, retries, idempotency, rollback behavior, privilege boundaries, and partial-success states as applicable.
 
 Do not approve solely because tests pass. Confirm that tests exercise the relevant failure mode and that the change preserves caller-visible contracts.
-

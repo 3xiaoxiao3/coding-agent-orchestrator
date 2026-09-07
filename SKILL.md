@@ -1,6 +1,6 @@
 ---
 name: coding-agent-orchestrator
-description: Route software-engineering work among the main agent, subagents, and GPT-5.6 Luna/Sol or GPT-6 Astra based on reading breadth, decision risk, review depth, context cost, and parallelism. Use for complex coding tasks, broad repository exploration, formal code review, architecture work, or when the user asks to optimize agent/model routing or token usage. Skip for trivial, narrow tasks where dispatch overhead exceeds its value.
+description: Route software-engineering work among the main agent, subagents, and GPT-5.6 Luna/Terra/Sol or GPT-6 Astra based on reading breadth, decision risk, review depth, context cost, and parallelism. Use for complex coding tasks, broad repository exploration, formal code review, architecture work, or when the user asks to optimize agent/model routing or token usage. Skip for trivial, narrow tasks where dispatch overhead exceeds its value.
 ---
 
 # Coding Agent Orchestrator
@@ -21,9 +21,10 @@ Keep foundational architecture, design, ADR, handoff, and core business-rule doc
 
 ## Route models
 
-Use the compact rule: **Luna gathers, Sol solves, Astra judges.** Risk outranks apparent difficulty; reasoning effort does not substitute for a stronger model.
+Use the compact rule: **Luna extracts, Terra explores, Sol solves, Astra judges.** Risk outranks apparent difficulty; reasoning effort does not substitute for a stronger model.
 
-- Use Luna for bounded, low-risk searches and summaries.
+- Use Luna for narrow, repeatable searches, extraction, and classification.
+- Use Terra for broad read-only exploration, large inputs, and evidence compression.
 - Use Sol for implementation, debugging, tests, module analysis, and ordinary formal review.
 - Use Astra for architecture decisions, high-risk review, conflicting evidence, or final judgment on critical changes.
 
